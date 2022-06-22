@@ -2,6 +2,7 @@
   "name": "urbit-ui-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/apps/urbit-ui-template",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -10,14 +11,16 @@
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "@urbit/api": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "sed -i '' -e 's/compress: true/compress: false/' ./node_modules/react-scripts/config/webpackDevServer.config.js && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
