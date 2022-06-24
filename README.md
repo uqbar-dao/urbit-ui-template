@@ -4,9 +4,15 @@ Change `urbit-ui-template` in `package.json` to match the name of your app.
 
 Change `proxy` in `package.json` to point at your ship. It is currently set to the default fakezod port.
 
+Update the `favicon` and `logo` files in the `public` directory to match those of your app.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-There are a few changes to the `public` folder and the `package.json` that are specific to urbit apps.
+There are a few changes to the `public` directory and the `package.json` that are specific to urbit apps.
+
+## Templates
+
+There are templates under `/src/templates/` for types, components, and urbit API methods combined with zustand state management.
 
 ## Available Scripts
 
@@ -57,7 +63,7 @@ The following is a step-by-step guide based on the official guide found here: ht
 
 Note that `path_to_...` is used as a placeholder in the steps below.
 
-It is recommended to copy these steps and build your own glob script, particularly for the non-urbit commands.
+It is recommended to copy these steps and build your own glob-generation script, particularly for the non-urbit commands.
 
 1. Run `npm run build`
 2. Start up a new fakezod with `path_to_urbit/urbit -F zod`

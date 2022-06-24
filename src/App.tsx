@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import useStore from './templates/store/store';
 
 function App() {
+  const { init } = useStore();
+
+  useEffect(() => {
+    init()
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <div className="App">
       <header className="App-header">
