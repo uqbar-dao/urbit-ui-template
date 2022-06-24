@@ -1,14 +1,14 @@
 # Urbit UI Template
 
+This project is designed to be a starting point for building UIs for Urbit apps and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+There are a few changes to the `public` directory and the `package.json` that are specific to urbit apps.
+
 Change `urbit-ui-template` in `package.json` to match the name of your app.
 
 Change `proxy` in `package.json` to point at your ship. It is currently set to the default fakezod port.
 
 Update the `favicon` and `logo` files in the `public` directory to match those of your app.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-There are a few changes to the `public` directory and the `package.json` that are specific to urbit apps.
 
 ## Templates
 
@@ -86,7 +86,7 @@ Update the `glob-http` line in your desk.docket-0 to include the new glob url an
 
 You should not have a `glob-ames` or `site` entry if you are using `glob-http`. And you should use `glob-http` if you are using a React frontend due to the size of the UI files.
 
-Example: `glob-http+['https://escape-app-dist.s3.us-east-2.amazonaws.com/glob-0v4.nko18.e27qn.q1ueq.aon0t.l0fp3.glob' 0v4.nko18.e27qn.q1ueq.aon0t.l0fp3]`
+Example `glob-http` entry: `glob-http+['https://escape-app-dist.s3.us-east-2.amazonaws.com/glob-0v4.nko18.e27qn.q1ueq.aon0t.l0fp3.glob' 0v4.nko18.e27qn.q1ueq.aon0t.l0fp3]`
 
 ## Learn More
 
